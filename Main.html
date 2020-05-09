@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>단디</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--<header><h1>공공시설물 조회 및 신고</h1></header>-->
+      
+      <!--로고 왼쪽 정렬하기-->
+      <br>
+      &emsp; &emsp; <img src="image/단디 로고.png" alt="Logo" width="80px" align="left" >
+      
+      <!--검색 바-->
+      <div class="search" align="right" >
+      <class="search_text"> <input type="text" placeholder="검색" style="border: 2px solid #0098B1";><class>
+      <class="search_btn"> <button><img src="image/search_btn.png" alt="search" width="15px"></button> </class>
+      </div>
+      <br>
+      
+      <!--상위 메뉴 -->
+        <nav>
+            <ul class="nav-container">
+                <li class="nav-item"> <a href="">시설물신고</a> </li>
+                <li class="nav-item"> <a href="">공공시설물조회</a> </li>
+                <li class="nav-item"> <a href="">신고처리현황</a> </li>
+                <li class="nav-item"> <a href="">안전뉴스</a> </li>
+            </ul>
+        </nav>
+      
+		<!--<img src="image/map.jpg" style="max-width: 100%; height: auto;" alt="Logo" align="left" >-->
+		<div class="map">
+			<img src="image/지도 버튼/gwdo.png" alt="강원도" class="map-button1"><a href="#"></a></img>
+			<img src="image/지도 버튼/kgdo.png" alt="경기도" class="map-button2"><a href="#"></a></img>
+			<img src="image/지도 버튼/ksbdo.png" alt="경상북도" class="map-button3"><a href="#"></a></img>
+			<img src="image/지도 버튼/ccbdo.png" alt="충청북도" class="map-button4"><a href="#"></a></img>
+			<img src="image/지도 버튼/ccndo.png" alt="충청남도" class="map-button5"><a href="#"></a></img>
+			<img src="image/지도 버튼/dj.png" alt="대전" class="map-button6"><a href="#"></a></img>
+			<img src="image/지도 버튼/dg.png" alt="대구" class="map-button7"><a href="#"></a></img>
+		</div>
+		
+
+    </body>
+   <style>
+   body {
+      margin: 0; /*body의 바깥 여백을 없앰으로서 내비게이션 바가 페이지에 바짝 붙게 함*/
+   }
+   
+   .map {
+	background-color:#6EC8EA;
+	width:100%;
+	height:550px;
+
+   }
+
+   .map-button1{ /*강원도*/
+	position:absolute; 
+	left:869.2px; 
+	top:250.5px;
+   }
+
+   .map-button2{ /*경기도*/
+    position: absolute; 
+	left:770px; 
+	top:270px;
+   }
+
+   .map-button3{ /*경상북도*/
+    position: absolute; 
+	left:922px; 
+	top:376px;
+   }
+
+   .map-button4{ /*충청북도*/
+    position: absolute; 
+	left:840.5px; 
+	top:373px;
+   }
+
+	.map-button5{ /*충청남도*/
+    position: absolute; 
+	left:743px; 
+	top:382px;
+   }
+
+   .map-button6{ /*대전*/
+    position: absolute; 
+	left:843px; 
+	top:427px;
+   }
+
+   .map-button7{ /*대구*/
+    position: absolute; 
+	left:945px; 
+	top:485px;
+   }
+
+   .nav-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 0; /*쓸 데 없는 공백 제거*/
+      padding: 0; /*쓸 데 없는 공백 제거*/
+      background-color: #F5C227;
+      list-style-type: none; /*목록 기호 제거*/
+   }
+
+   .nav-item {
+      padding: 15px;
+      cursor: pointer; /*마우스 커서를 pointer 모양으로 함*/
+      font-weight: bold;
+   }
+   .nav-item a { /*nav-item 클래스 아래의 a 요소를 선택함*/
+      text-align: center;
+      text-decoration: none; /*밑줄 없앰*/
+      color: black;
+   }
+
+   .nav-item:hover { /*마우스 올렸을 때*/
+      background-color: #E9950D;
+   }
+   /*
+   .nav-container { /*상단 고정*/
+      position: fixed;
+      top: 90px; /*상단 위치를 90으로 위에 고정*/
+   }
+   */
+   header {
+      margin-top: 60px; /*페이지의 맨 위에서 메뉴가 header를 가리지 않도록 공백을 만듬*/
+   }
+
+   </style>
+</html>
